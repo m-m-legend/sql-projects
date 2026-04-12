@@ -16,20 +16,19 @@ This repository contains a collection of practical projects and exercises develo
 ## 📂 Repository Structure
 
 ```
-sql-projects/
-├── freeCodeCamp/
-│   ├── relational-database/
-│   └── ...
-├── personal-projects/
-│   ├── project-01/
-│   ├── project-02/
-│   └── ...
-├── exercises/
-│   └── ...
-└── queries/
-    └── ...
+│   LICENSE
+│   README.md
+│   
+├───scripts
+│       bike-shop.sh
+|       [...]
+│       
+└───sql
+        bike-shop.sql
+        universe.sql
+        [...]
+        
 ```
-
 ## 🚀 Content
 
 - **SQL Fundamentals**: SELECT, INSERT, UPDATE, DELETE, WHERE
