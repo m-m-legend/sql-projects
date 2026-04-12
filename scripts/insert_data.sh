@@ -18,7 +18,7 @@ do
   # Pular header
   if [[ $YEAR != "year" ]]
   then
-    # Inserir winner se não existir
+    # Inserir ganhador se não existir
     WINNER_ID=$($PSQL "SELECT team_id FROM teams WHERE name='$WINNER'")
     if [[ -z $WINNER_ID ]]
     then
@@ -26,7 +26,7 @@ do
       WINNER_ID=$($PSQL "SELECT team_id FROM teams WHERE name='$WINNER'")
     fi
 
-    # Inserir opponent se não existir
+    # Inserir oponente se não existir
     OPPONENT_ID=$($PSQL "SELECT team_id FROM teams WHERE name='$OPPONENT'")
     if [[ -z $OPPONENT_ID ]]
     then
@@ -34,7 +34,7 @@ do
       OPPONENT_ID=$($PSQL "SELECT team_id FROM teams WHERE name='$OPPONENT'")
     fi
 
-    # Inserir game
+    # Inserir jogo
     INSERT_GAME=$($PSQL "
       INSERT INTO games(year, round, winner_id, opponent_id, winner_goals, opponent_goals)
       VALUES($YEAR, '$ROUND', $WINNER_ID, $OPPONENT_ID, $WINNER_GOALS, $OPPONENT_GOALS)
