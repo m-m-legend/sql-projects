@@ -67,7 +67,7 @@ This repository contains a collection of practical projects and exercises develo
 
 ## 🎓 Certifications
 
-- ✅ freeCodeCamp - Relational Database (ongoing)
+- ✅ freeCodeCamp - Relational Database
 
 ## 💡 Topics Covered
 
